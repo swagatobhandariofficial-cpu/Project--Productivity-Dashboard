@@ -1,20 +1,24 @@
-// function getUser(user, cb){
-//     setTimeout(() => {
-//         cb({id: 1, username:"_spriiha." })
-//     }, 1000);
-// }
+//----------------call Back example 1
 
-// function getUserPosts(id, cb){
-//     setTimeout(() => {
-//         cb(["Hola", "Amigos" , "Good day"])
-//     },2000)
-// }
+function getUser(user, cb){
+    setTimeout(() => {
+        cb({id: 1, username:"_spriiha." })
+    }, 1000);
+}
 
-// getUser("Swagato", function(details){
-//     getUserPosts(details.id, function(allposts){
-//         console.log(details.username, allposts)
-//     } )
-// })
+function getUserPosts(id, cb){
+    setTimeout(() => {
+        cb(["Hola", "Amigos" , "Good day"])
+    },2000)
+}
+
+getUser("Swagato", function(details){
+    getUserPosts(details.id, function(allposts){
+        console.log(details.username, allposts)
+    } )
+})
+
+//-----------------------call back example 2
 
 function loginUser(username, cb){
     console.log("logging in user....")
@@ -34,7 +38,7 @@ function loadDashboard(permissions, cb) {
     console.log("loading dashboard....")
     setTimeout(() => {
         cb();
-    }, 1000);
+    }, 1000) ;
 }
 
 
