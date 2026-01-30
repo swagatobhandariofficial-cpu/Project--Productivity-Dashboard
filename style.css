@@ -1,14 +1,65 @@
 * {
-  padding: 0%;
-  margin: 0%;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-<<<<<<< HEAD
-=======
-  background-color: black;
->>>>>>> 811efb7894ff66b628565315c15313e07d2c02f8
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+}
+
+.app {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.app h1 {
+  margin-bottom: 1rem;
+}
+.app .input-box {
+  display: flex;
+  gap: 0.5rem;
+}
+.app .input-box input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.app .input-box button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #4a6cf7;
+  color: white;
+}
+.app .input-box button:hover {
+  background: #3954d8;
+}
+.app .result {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.app .result.cold {
+  color: #1e90ff;
+}
+.app .result.hot {
+  color: #e63946;
+}
+.app .result.moderate {
+  color: #2a9d8f;
+}
+.app .result.error {
+  color: #d00000;
 }/*# sourceMappingURL=style.css.map */

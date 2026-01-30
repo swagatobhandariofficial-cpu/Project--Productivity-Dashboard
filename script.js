@@ -18,7 +18,6 @@ async function pqr(city) {
 
     const real = await raw.json();
     const temp = real.main.temp;
-
     if (temp < 0) {
       result.textContent = `Too cold outside ❄️ (${temp} °C)`;
       result.classList.add("cold");
