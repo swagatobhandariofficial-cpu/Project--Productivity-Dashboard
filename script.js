@@ -368,7 +368,7 @@ function changeTheme() {
 
         if (flag == 0) {
             rootElement.style.setProperty('--pri', '#F8F4E1')
-            rootElement.style.setProperty('--sec', '#20324bc8')
+            rootElement.style.setProperty('--sec', '#20324b')
             rootElement.style.setProperty('--tri1', '#948979')
             rootElement.style.setProperty('--tri2', '#393E46')
             flag = 1
